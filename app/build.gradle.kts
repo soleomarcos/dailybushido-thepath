@@ -3,6 +3,8 @@ plugins {
     id("com.android.application") version "8.12.1"
     id("org.jetbrains.kotlin.android") version "2.0.0"
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
+    id("com.google.gms.google-services")
+    id("com.google.firebase.crashlytics")
 }
 
 android {
@@ -46,6 +48,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("com.google.firebase:firebase-crashlytics:20.0.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
